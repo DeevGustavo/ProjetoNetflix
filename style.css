@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding-top: 20px;
+    padding: 0; /* espaçamento dentro dos itens */
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+}
+
+ul{
+    height: 25px; /* altura*/
+    width: 95%; /* Largura */
+    display: flex;
+    justify-content: space-between; /* espaçamento entre os itens da lista / move eles para canto, centro, final OBS: na horizontal*/
+    list-style-type: none;
+    position: fixed; /* conforme mexer a tela a logo e avatar ele acompanha*/
+}
+
+.avatar {
+    height: 25px;
+}
+video {
+    width: 100vw; /*vw/ tela dividia em 100 pedaços e ocupar os 100 pedaços*/
+    min-height: 80vh; /*minino para ele ocupar é 80, caso a tela va esticando ele vai ocupando 80% da tela */
+}
+.capa {
+    position: absolute;
+    bottom: 20%; /* TOP - CIMA, BOTTOM - BAIXO, LEFT -ESQUERDA, RIGHT - DIREITA */
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+}
+
+.capa-titulo {
+    color: white;
+    font-size: 80px; /* tamanho da fonte*/ 
+    margin-bottom: 5px;
+    font-weight: bold; /*grossura da fonte*/
+}
+.capa-descricao {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px; /*espassamento entre a palavra 10px de baixo para cima 20px lateral*/
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.link-informacoes {
+    color: black;
+    background-color: rgba(255,255,255,0.35);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Carrossel {
+    height: 150px;
+    padding: 0px 40px;
+   bottom: 40px;
+}
+
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+    left: 50px;
+    width: 100%;
+}
+.titulo-carrossel {
+    color: white;
+    font-size: 30px;
+    margin-bottom: -30px;
+    height: 100px;
+    align-items: end;
+}
+/* classe = .
+    ID = #
+*/
+
+.botao-som{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 100px;
+    right: 20px
+
+}
+
+.modal {
+    display: none;
+    /* display block ( bloco - ele aparece na tela)
+    display none ( desaparece, nada, sumiu)*/
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
+}
